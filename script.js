@@ -86,7 +86,7 @@ peopleInput.addEventListener("blur", () => {
 });
 
 function calculateTipAmount(bill, percentage, people) {
-  if (bill === 0 || people === 0) {
+  if (bill === 0 || people === 0 || isNaN(bill) || isNaN(people)) {
     console.log("ERR");
     return;
   } else {
