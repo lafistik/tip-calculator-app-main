@@ -23,27 +23,43 @@
   </head>
   <body>
     <div class="container">
-      <img src="./images/logo.svg" alt="logo" />
+      <img class="logo" src="./images/logo.svg" alt="logo" />
       <div class="calculator">
         <div class="calculator__input">
           <div class="form-group">
+            <p class="error__text"></p>
             <label for="bill">Bill</label>
-            <input type="text" id="bill" name="bill" placeholder="0" />
+            <input
+              class="input"
+              type="text"
+              id="bill"
+              name="bill"
+              placeholder="0"
+            />
           </div>
           <div class="tip__value">
             <p>Select Tip %</p>
-            <ul class="list">
-              <li class="list__el">5%</li>
-              <li class="list__el">10%</li>
-              <li class="list__el">15%</li>
-              <li class="list__el">25%</li>
-              <li class="list__el">50%</li>
-              <li class="list__el">Custom</li>
-            </ul>
+            <div class="list">
+              <p class="discount__error"></p>
+              <div class="list__el">5%</div>
+              <div class="list__el">10%</div>
+              <div class="list__el active">15%</div>
+              <div class="list__el">25%</div>
+              <div class="list__el">50%</div>
+
+              <input
+                type="text"
+                id="custom"
+                name="custom"
+                placeholder="Custom"
+              />
+            </div>
           </div>
-          <div class="form-group">
+          <div class="form-group people">
+            <p class="error__text"></p>
             <label for="people__num">Number of People</label>
             <input
+              class="input"
               type="text"
               id="people__num"
               name="people__num"
@@ -60,7 +76,7 @@
             <p>Total <span>/ person</span></p>
             <span class="total__amount-amount">$0.00</span>
           </div>
-          <button class="btn">Reset</button>
+          <button class="btn reset">Reset</button>
         </div>
       </div>
     </div>
