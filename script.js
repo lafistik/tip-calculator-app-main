@@ -29,11 +29,11 @@ customTip.addEventListener("blur", () => {
   if (customTip.value) {
     if (customTip.value > 50 || customTip.value < 0) {
       customTip.parentElement.querySelector(".discount__error").textContent =
-        "Please input number between 1 and 50";
+        "Use number between 1 and 50";
       customTip.style.borderColor = "#fa9884";
     } else if (!/^\d{1,2}$/.test(customTip.value)) {
       customTip.parentElement.querySelector(".discount__error").textContent =
-        "Please input number between 1 and 50";
+        "Use number between 1 and 50";
       customTip.style.borderColor = "#fa9884";
     } else {
       customTip.style.borderColor = "transparent";

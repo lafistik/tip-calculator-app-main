@@ -87,8 +87,9 @@ input,
 .discount__error {
   color: #fa9884;
   position: absolute;
-  bottom: -30px;
+  bottom: -25px;
   right: 0;
+  font-size: 0.875rem;
 }
 
 .error__text {
@@ -96,6 +97,7 @@ input,
   top: 0;
   color: #fa9884;
   position: absolute;
+  font-size: 0.875rem;
 }
 
 /*  */
