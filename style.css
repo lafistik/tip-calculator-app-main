@@ -1,0 +1,29 @@
+:root {
+  --clr-primary-cyan: hsl(172, 67%, 45%);
+
+  --clr-neutral-ddkcyan: hsl(183, 100%, 15%);
+  --clr-neutral-dkcyan: hsl(186, 14%, 43%);
+  --clr-neutral-cyan: hsl(184, 14%, 56%);
+  --clr-neutral-ltcyan: hsl(185, 41%, 84%);
+  --clr-neutral-lltcyan: hsl(189, 41%, 97%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  --fs-input: 1.5rem;
+  --fw-700: 700;
+  --ff-body: "Space Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
